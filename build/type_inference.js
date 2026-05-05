@@ -7,5 +7,5 @@ let nomes = [
     "Matheus",
     "Lucas"
 ];
-nomes.push(20); // não podemos por ser um número em um array inicializado como STRING
+// nomes.push(20); não podemos por ser um número em um array inicializado como STRING
 console.log(nomes);
