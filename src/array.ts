@@ -5,6 +5,7 @@ numeros = [1,2,3,4,5,6,7,8,9,10];
 
 // numeros = ["a"] // erro
 
+console.log(numeros)
 
 // outra forma de fazer com generics
 let array_diferenciado: Array<string | number>
