@@ -31,7 +31,7 @@ console.log(multiplicar(10,3))
 
 // versão reduzida, como fazemos no filter quando o código pode ser feito em uma linha
 
-const dobrar =  (n: number) => n * 2
+const dobrar =  (n: number): number => n * 2
 
 console.log(dobrar(100))
 
@@ -72,7 +72,6 @@ function login(email:string, senha:string, user?:string): object {
 
 // não passei nenhum user como argumento, logo vazio, então undefined (automático)
 console.log(login("joao@gmail.com", "1234"))
-
 
 function somaVendas(...vendas: number[]): number{
     const quantidade_de_vendas = vendas.length
