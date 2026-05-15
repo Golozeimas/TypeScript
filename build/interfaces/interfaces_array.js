@@ -5,9 +5,12 @@ const projeto_PHP = {
     id: 1,
     projetos: ["Sistema de estoque", "Sistema de mensageria", "Sistema para restaurante"]
 };
-const { id, projetos } = projeto_PHP; // descontrução
-for (let i = 0; i < projetos.length; i++) {
-    console.log(id, projetos[i]);
+let { id, projetos } = projeto_PHP; // desconstrução
+if (typeof id === "number") {
+    for (let i = 0; i < projetos.length; i++) {
+        console.log(id, "-", projetos[i]);
+        id += 1;
+    }
 }
 const front_ends = {
     tecnologias: [

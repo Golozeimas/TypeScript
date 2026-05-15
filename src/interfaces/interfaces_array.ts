@@ -1,5 +1,5 @@
 interface ProjetosProp{
-    id: (string | number),
+    id: unknown,
     projetos: string[]
 }
 
@@ -9,10 +9,13 @@ const projeto_PHP: ProjetosProp = {
     projetos: ["Sistema de estoque", "Sistema de mensageria", "Sistema para restaurante"]
 }
 
-const {id, projetos} = projeto_PHP // descontrução
+let {id, projetos} = projeto_PHP // desconstrução
 
-for(let i: number = 0; i < projetos.length; i++){
-    console.log(id, projetos[i])
+if(typeof id === "number"){
+    for(let i: number = 0; i < projetos.length; i++){
+    console.log(id,"-",projetos[i])
+    id += 1
+    }
 }
 
 
@@ -23,6 +26,7 @@ interface TecnologiasProps{
 }
 
 // uso de uma interface herdando outra e passando a outra como array
+// um array que deve seguir o padrão do objetos com id e nome
 interface NomesProps{
     tecnologias: TecnologiasProps[];
 }
