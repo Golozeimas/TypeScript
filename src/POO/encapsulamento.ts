@@ -37,3 +37,35 @@ user.nome = "Matheus" // modificação por ser público
 // user.saldo -> ocorre um erro por ser privado o atributo 'saldo'
 
 user.mostrarNome()
+
+
+class Produto{
+    private _preco: number;
+
+    constructor(preco: number){
+        this._preco = preco
+    }
+
+    get preco(){
+       return this._preco; 
+    }
+
+    set preco(valor: number){
+        if(valor < 0){
+            console.log("Valor negativo")
+            return
+        }
+        this._preco = valor;
+    }
+}
+
+const p = new Produto(0);
+
+console.log("Antes do SET: ")
+console.log(p.preco)
+
+console.log("Depois do SET: ")
+// acessa diretamente o SET, o GET é usado normalmente como se fosse o atributo
+p.preco = 1000
+console.log(p.preco)
+
