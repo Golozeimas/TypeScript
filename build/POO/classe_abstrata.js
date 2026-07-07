@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 // definição de classe abstrata
 class Animal {
-    nome;
     constructor(nome) {
         this.nome = nome;
     }

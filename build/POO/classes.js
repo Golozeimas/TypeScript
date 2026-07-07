@@ -1,9 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Pessoa {
-    // atributos
-    nome;
-    idade;
     // construtor: ao instância definir valores iniciais para os atributos
     // inicializa junto com a classe esse método
     constructor(nome, idade) {

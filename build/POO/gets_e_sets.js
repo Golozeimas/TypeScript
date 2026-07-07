@@ -1,8 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Game {
-    _nome_do_jogo;
-    _ip_do_jogo;
     constructor(_nome_do_jogo, _ip_do_jogo) {
         this._nome_do_jogo = _nome_do_jogo;
         this._ip_do_jogo = _ip_do_jogo;

@@ -15,8 +15,6 @@ protectd -> pode ser acessado dentro da classe que criou e das suas filhas
 */
 Object.defineProperty(exports, "__esModule", { value: true });
 class Usuario {
-    nome;
-    saldo;
     constructor(nome, saldo) {
         this.nome = nome;
         this.saldo = saldo;
@@ -33,7 +31,6 @@ user.nome = "Matheus"; // modificação por ser público
 // user.saldo -> ocorre um erro por ser privado o atributo 'saldo'
 user.mostrarNome();
 class Produto {
-    _preco;
     constructor(preco) {
         this._preco = preco;
     }

@@ -10,15 +10,11 @@ class Automovel {
     }
 }
 class Especificao {
-    descricao;
     constructor(descricao) {
         this.descricao = descricao;
     }
 }
 class Carro {
-    nome;
-    cavalaria;
-    tamanho_da_roda;
     constructor(nome, cavalaria, tamanho_da_roda) {
         this.nome = nome;
         this.cavalaria = cavalaria;

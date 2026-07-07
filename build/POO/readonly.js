@@ -1,10 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Pessoa {
-    id = "123";
-    nome;
-    idade;
     constructor(nome, idade) {
+        this.id = "123";
         this.nome = nome;
         this.idade = idade;
     }

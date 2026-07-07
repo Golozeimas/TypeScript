@@ -4,8 +4,6 @@
 // e métodos mas com seus próprios também
 Object.defineProperty(exports, "__esModule", { value: true });
 class Usuario {
-    nome;
-    email;
     constructor(nome, email) {
         this.nome = nome;
         this.email = email;
@@ -15,8 +13,6 @@ class Usuario {
     }
 }
 class Admin extends Usuario {
-    cargo;
-    nivel;
     constructor(nome, email, cargo, nivel) {
         super(nome, email);
         this.cargo = cargo;
