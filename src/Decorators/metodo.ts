@@ -1,4 +1,5 @@
 
+/*
 function VerificaPessoa(idade: number){
     
     // target -> o construtor da classe
@@ -21,6 +22,8 @@ function VerificaPessoa(idade: number){
         }
     }
 }
+
+*/
 
 class Pessoa{
 

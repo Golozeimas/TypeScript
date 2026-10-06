@@ -1,4 +1,4 @@
-
+/*
 function validaNome(tamanho: number){
     
     // target -> construtor da nossa classe
@@ -27,7 +27,7 @@ function validaNome(tamanho: number){
 
     }
 }
-
+*/
 
 class Jogo{
     // @validaNome(5)
